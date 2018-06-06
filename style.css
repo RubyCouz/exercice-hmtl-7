@@ -1,0 +1,35 @@
+#identite
+{
+background-color: #2574A9;
+border-width: thin;
+border-top: outset;
+border-left: outset;
+border-color: #B2B2B2;
+}
+.id
+{
+  background-color: #2574A9;}
+#adresse
+{
+  background-color: #9A12B3;
+  border-width: thin;
+  border-top: outset;
+  border-left: outset;
+  border-color: #B2B2B2;
+}
+.adresse
+{
+  background-color: #9A12B3;
+}
+#infregl
+{
+  background-color: #DB0A5B;
+  border-width: thin;
+  border-top: outset;
+  border-left: outset;
+  border-color: #B2B2B2;
+}
+.infregl
+{
+  background-color: #DB0A5B;
+}

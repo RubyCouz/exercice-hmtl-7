@@ -6,7 +6,8 @@
     <title></title>
   </head>
   <body>
-<p>Votre identité</p>
+<fieldset id="identite">
+  <legend class="id">Votre identité</legend>
 <ol>
   <li><form method="post" action="traitement.php" />
     <label>Nom</label> : <input type="text" name="Nom" placeholder="Nom"/>
@@ -18,7 +19,9 @@
     <label>Adresse mail</label> : <input type="text" name="Adresse mail" placeholder="Adresse mail"/>
   </li>
 </ol>
-<p>Adresse de livraison</p>
+</fieldset>
+  <fieldset id="adresse">
+    <legend class="adresse">Adresse de livraison</legend>
 <ol>
   <li><form method="post" action="traitement.php" />
     <label>Adresse</label> : <textarea type="text" name="Adresse mail" placeholder="Adresse mail">
@@ -33,7 +36,9 @@
     <label>Ville</label> : <input type="text" name="Ville" placeholder="Ville"/>
   </li>
 </ol>
-<p>Information de réglement</p>
+</fieldset>
+  <fieldset id=infregl>
+    <legend class="infregl"> Informations de réglement</legend>
 <ol>
 <li>Type de carte bancaire <br />
   <input type="radio" name="type de carte bancaire" value="Visa" id="Visa" />
@@ -41,7 +46,6 @@
   <input type="radio" name="type de carte bancaire" value="Mastercard" id="Mastercard"/>
   <label for="Mastercard">Mastercard</label>
   </li>
-
   <li><form method="post" action="traitement.php" />
     <label>Numéro de carte</label> ; <input type="text" name="Numéro de carte" placeholder="Numéro de carte"/>
   </li>
@@ -52,6 +56,7 @@
     <lable>Nom du titulaire</lable> : <input type="text" name="Nom du titulaire" placeholder="Nom du titulaire"/>
   </li>
 </ol>
+</fieldset>
 <input type="submit" value="J'achète!" />
   </body>
 </html>
