@@ -1,62 +1,67 @@
 <!DOCTYPE html>
-<html lang="fr" dir="ltr" />
-        <link rel="stylesheet" href="style.css" />
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-<fieldset id="identite">
-  <legend class="id">Votre identité</legend>
-<ol>
-  <li><form method="post" action="traitement.php" />
-    <label for="Nom">Nom:</label><input type="text" name="lastname" placeholder="Nom"/>
-  </li>
-  <li><form method="post" action="traitement.php" />
-    <label for="prénom">Prénom:</label><input type="text" name="firstname" placeholder="Prénom" />
-  </li>
-  <li><form method="post" action="traitement.php" />
-    <label for="e.mail">Adresse mail:</label><input type="text" name="e.mail" placeholder="Adresse mail"/>
-  </li>
-</ol>
-</fieldset>
-  <fieldset id="adresse">
+<html lang="fr" dir="ltr">
+<link rel="stylesheet" href="style.css" />
+<head>
+  <meta charset="utf-8" />
+  <title>Formulaire</title>
+</head>
+<body>
+  <form method="post" action="#" />
+  <fieldset class="id">
+    <legend class="id">Votre identité</legend>
+    <ol>
+      <li>
+        <label for="Nom">Nom:</label><input type="text" name="lastname" placeholder="Nom" id="Nom" />
+      </li>
+      <li>
+        <label for="prénom">Prénom:</label><input type="text" name="firstname" placeholder="Prénom" id="prénom" />
+      </li>
+      <li>
+        <label for="e.mail">Adresse mail:</label><input type="text" name="e.mail" placeholder="Adresse mail" id="e.mail" />
+      </li>
+    </ol>
+  </fieldset>
+    <fieldset class="adresse">
     <legend class="adresse">Adresse de livraison</legend>
-<ol>
-  <li><form method="post" action="traitement.php" />
-    <label for="adresse">Adresse:</label><textarea type="text" name="location" placeholder="Adresse mail">
-    </textarea>
-  </li>
-  <li><form method="post" action="traitement.php" />
-</html>
-
-    <label for="code postal">Code postal:</label><input type="text" name="zip code" placeholder="Code postale"/>
-  </li>
-  <li><form method="post" action="traitement.php" />
-    <label for="ville">Ville:</label><input type="text" name="town" placeholder="Ville"/>
-  </li>
-</ol>
-</fieldset>
-  <fieldset id=infregl>
+    <ol>
+      <li>
+        <label for="adress">Adresse:</label><textarea type="text" name="location" placeholder="Adresse mail" id="adress">
+        </textarea>
+      </li>
+      <li>
+        <label for="code postal">Code postal:</label><input type="text" name="zip code" placeholder="Code postale" id="code postal" />
+      </li>
+      <li>
+        <label for="ville">Ville:</label><input type="text" name="town" placeholder="Ville" id="ville" />
+      </li>
+    </ol>
+  </fieldset>
+  <fieldset class=infregl>
     <legend class="infregl"> Informations de réglement</legend>
-<ol>
-<li>Type de carte bancaire <br />
-  <input type="radio" name="type of credit card" value="Visa" id="Visa" />
-  <label for="Visa">Visa</label><br />
-  <input type="radio" name="type of credit card" value="Mastercard" id="Mastercard"/>
-  <label for="Mastercard">Mastercard</label>
+    <ol>
+      <li>Type de carte bancaire
+        <ul>
+          <li>
+        <input type="radio" name="type of credit card" value="Visa" id="Visa" />
+        <label for="Visa">Visa</label>
+      </li>
+      <li>
+        <input type="radio" name="type of credit card" value="Mastercard" id="Mastercard"/>
+        <label for="Mastercard">Mastercard</label>
+      </li>
+    </ul>
   </li>
-  <li><form method="post" action="traitement.php" />
-    <label for="numero de carte">Numéro de carte:</label><input type="text" name="card number" placeholder="Numéro de carte"/>
-  </li>
-  <li><form method="post" action="traitement.php" />
-    <label for="code de sécurité">Code de sécurité:</label><input type="text" name="security code" placeholder="Code de sécurité"/>
-  </li>
-  <li><form method="post" action="traitement.php" />
-    <label for="nom du titulaire">Nom du titulaire:</label><input type="text" name="name of the holder" placeholder="Nom du titulaire"/>
-  </li>
-</ol>
-</fieldset>
-<input type="submit" value="J'achète!" />
-  </body>
+      <li><form method="post" action="traitement.php" />
+        <label for="numero de carte">Numéro de carte:</label><input type="text" name="card number" placeholder="Numéro de carte" id="numero de carte" />
+      </li>
+      <li><form method="post" action="traitement.php" />
+        <label for="code de sécurité">Code de sécurité:</label><input type="text" name="security code" placeholder="Code de sécurité" id="code de sécurité" />
+      </li>
+      <li><form method="post" action="traitement.php" />
+        <label for="nom du titulaire">Nom du titulaire:</label><input type="text" name="name of the holder" placeholder="Nom du titulaire" id="nom du titulaire" />
+      </li>
+    </ol>
+  </fieldset>
+  <input type="submit" value="J'achète!" />
+</body>
 </html>
